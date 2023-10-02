@@ -1,12 +1,50 @@
+"use client"
 import MarginWrapper from "../components/MarginWrapper";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import Image from "next/image";
-
+import { useState ,useEffect } from "react";
+import Navbar from "@/components/Navbar";
+const themes = [
+  "light",
+  "dark",
+  "cupcake",
+  "bumblebee",
+  "emerald",
+  "corporate",
+  "synthwave",
+  "retro",
+  "cyberpunk",
+  "valentine",
+  "halloween",
+  "garden",
+  "forest",
+  "aqua",
+  "lofi",
+  "pastel",
+  "fantasy",
+  "wireframe",
+  "black",
+  "luxury",
+  "dracula",
+  "cmyk",
+  "autumn",
+  "business",
+  "acid",
+  "lemonade",
+  "night",
+  "coffee",
+  "winter",
+];
 export default function Home() {
+  const [theme, settheme] = useState(themes[23]);
+  useEffect(() => {
+    console.log(theme);
+  }, [theme]);
   return (
-    <>
+    <div>
+      
       <MarginWrapper className="mb-12 mt-28 sm:mt-40 flex flex-col items-center justify-center text-center">
         <div className="mx-auto mb-4 flex max-w-fit items-center justify-center space-x-2 overflow-hidden rounded-full border border-gray-200 bg-white px-7 py-2 shadow-md backdrop-blur transition-all hover:border-gray-300 hover:bg-white/50">
           <p className="text-sm font-semibold text-gray-700">
@@ -156,6 +194,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

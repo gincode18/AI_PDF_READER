@@ -12,20 +12,25 @@ export const metadata: Metadata = {
 };
 
 
+
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
+
+
   return (
-    <html lang='en' className='light'>
-      <Providers>
+    <html lang='en' data-theme="light">
+      <Providers >
         <body
           className={cn(
             'min-h-screen font-sans antialiased grainy',
             inter.className
-          )}>
-          <Navbar />
+          )}
+          >
+            <Navbar></Navbar>
           {children}
         </body>
       </Providers>
