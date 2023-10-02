@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import type { Metadata } from "next";
+import 'simplebar-react/dist/simplebar.min.css'
 
 const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
