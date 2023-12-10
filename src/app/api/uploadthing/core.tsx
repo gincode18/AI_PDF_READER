@@ -101,7 +101,7 @@ const onUploadComplete = async ({
 };
 
 export const ourFileRouter = {
-  PdfUploader: f({ pdf: { maxFileSize: "4MB" } })
+  PdfUploader: f({ pdf: { maxFileSize: "8MB" } })
     .middleware(middleware)
     .onUploadComplete(onUploadComplete),
 } satisfies FileRouter;
