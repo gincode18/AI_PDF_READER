@@ -1,4 +1,4 @@
-import { cn } from "@/lib/Utils"
+import { cn } from "@/lib/utils"
 import { ReactNode } from "react"
 
 function MarginWrapper({className, children }: { className?:string,children: ReactNode}) {
