@@ -15,7 +15,7 @@ const Navbar = () => {
   const user = getUser();
 
   return (
-    <nav className="sticky h-16 inset-x-0 top-0 z-30 w-full border-b   backdrop-blur-lg transition-all pt-1">
+    <nav className="sticky h-16 inset-x-0 top-0 z-30 w-full border-b border-primary hover:border-secondary  backdrop-blur-lg transition-all pt-1">
       <MarginWrapper>
         <div className="flex h-14 items-center justify-between ">
           <div className=" flex flex-row">
