@@ -41,7 +41,7 @@ const ChatInput = ({ isDisabled }: ChatInputProps) => {
                   }
                 }}
                 placeholder='Enter your question...'
-                className='resize-none pr-12 text-base py-3 scrollbar-thumb-blue scrollbar-thumb-rounded scrollbar-track-blue-lighter scrollbar-w-2 scrolling-touch'
+                className='resize-none border-primary focus:border-secondary pr-12 text-base py-3 scrollbar-thumb-blue scrollbar-thumb-rounded scrollbar-track-blue-lighter scrollbar-w-2 scrolling-touch'
               />
 
               <Button
@@ -53,7 +53,7 @@ const ChatInput = ({ isDisabled }: ChatInputProps) => {
 
                   textareaRef.current?.focus()
                 }}>
-                <Send className='h-4 w-4' />
+                <Send className='h-4 w-4 text-accent' />
               </Button>
             </div>
           </div>

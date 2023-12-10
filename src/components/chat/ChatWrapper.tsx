@@ -32,14 +32,14 @@ const ChatWrapper = ({
 
   if (isLoading)
     return (
-      <div className='relative min-h-full bg-zinc-50 flex divide-y divide-zinc-200 flex-col justify-between gap-2'>
+      <div className='relative min-h-full bg-base-300 flex divide-y divide-primary flex-col justify-between gap-2'>
         <div className='flex-1 flex justify-center items-center flex-col mb-28'>
           <div className='flex flex-col items-center gap-2'>
-            <Loader2 className='h-8 w-8 text-blue-500 animate-spin' />
+            <Loader2 className='h-8 w-8 text-primary animate-spin' />
             <h3 className='font-semibold text-xl'>
               Loading...
             </h3>
-            <p className='text-zinc-500 text-sm'>
+            <p className='text-secondary text-sm'>
               We&apos;re preparing your PDF.
             </p>
           </div>
@@ -51,14 +51,14 @@ const ChatWrapper = ({
 
   if (data?.status === 'PROCESSING')
     return (
-      <div className='relative min-h-full bg-zinc-50 flex divide-y divide-zinc-200 flex-col justify-between gap-2'>
+      <div className='relative min-h-full bg-base-300 flex divide-y divide-primary flex-col justify-between gap-2'>
         <div className='flex-1 flex justify-center items-center flex-col mb-28'>
           <div className='flex flex-col items-center gap-2'>
-            <Loader2 className='h-8 w-8 text-blue-500 animate-spin' />
+            <Loader2 className='h-8 w-8 text-primary animate-spin' />
             <h3 className='font-semibold text-xl'>
               Processing PDF...
             </h3>
-            <p className='text-zinc-500 text-sm'>
+            <p className='text-secondary text-sm'>
               This won&apos;t take long.
             </p>
           </div>
@@ -70,14 +70,14 @@ const ChatWrapper = ({
 
   if (data?.status === 'FAILED')
     return (
-      <div className='relative min-h-full bg-zinc-50 flex divide-y divide-zinc-200 flex-col justify-between gap-2'>
+      <div className='relative min-h-full bg-error flex divide-y divide-warning flex-col justify-between gap-2'>
         <div className='flex-1 flex justify-center items-center flex-col mb-28'>
           <div className='flex flex-col items-center gap-2'>
-            <XCircle className='h-8 w-8 text-red-500' />
+            <XCircle className='h-8 w-8 text-error' />
             <h3 className='font-semibold text-xl'>
               Too many pages in PDF
             </h3>
-            <p className='text-zinc-500 text-sm'>
+            <p className='text-primary text-sm'>
         
               <span className='font-medium'>
               
@@ -102,7 +102,7 @@ const ChatWrapper = ({
 
   return (
     <ChatContextProvider fileId={fileId}>
-      <div className='relative min-h-full bg-zinc-50 flex divide-y divide-zinc-200 flex-col justify-between gap-2'>
+      <div className='relative min-h-full bg-base-300 flex divide-y divide-primary flex-col justify-between gap-2'>
         <div className='flex-1 justify-between flex flex-col mb-28'>
           <Messages fileId={fileId} />
         </div>

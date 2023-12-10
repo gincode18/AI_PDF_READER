@@ -88,8 +88,8 @@ const PdfRenderer = ({ url }: PdfRendererProps) => {
   }
 
   return (
-    <div className='w-full bg-white rounded-md shadow flex flex-col items-center'>
-      <div className='h-14 w-full border-b border-zinc-200 flex items-center justify-between px-2'>
+    <div className='w-full bg-base-300 rounded-md shadow flex flex-col items-center'>
+      <div className='h-14 w-full border-b border-primary flex items-center justify-between px-2'>
         <div className='flex items-center gap-1.5'>
           <Button
             disabled={currPage <= 1}
@@ -99,9 +99,9 @@ const PdfRenderer = ({ url }: PdfRendererProps) => {
               )
               setValue('page', String(currPage - 1))
             }}
-            variant='ghost'
+            variant='default'
             aria-label='previous page'>
-            <ChevronDown className='h-4 w-4' />
+            <ChevronDown className='h-4 w-4 text-accent' />
           </Button>
 
           <div className='flex items-center gap-1.5'>
@@ -117,7 +117,7 @@ const PdfRenderer = ({ url }: PdfRendererProps) => {
                 }
               }}
             />
-            <p className='text-zinc-700 text-sm space-x-1'>
+            <p className='text-primary text-sm space-x-1'>
               <span>/</span>
               <span>{numPages ?? 'x'}</span>
             </p>
@@ -134,9 +134,9 @@ const PdfRenderer = ({ url }: PdfRendererProps) => {
               )
               setValue('page', String(currPage + 1))
             }}
-            variant='ghost'
+            variant='default'
             aria-label='next page'>
-            <ChevronUp className='h-4 w-4' />
+            <ChevronUp className='h-4 w-4 text-accent' />
           </Button>
         </div>
 
@@ -144,15 +144,15 @@ const PdfRenderer = ({ url }: PdfRendererProps) => {
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button
-                className='gap-1.5'
+                className='gap-1.5 text-accent'
                 aria-label='zoom'
-                variant='ghost'>
+                variant='default'>
                 <Search className='h-4 w-4' />
                 {scale * 100}%
                 <ChevronDown className='h-3 w-3 opacity-50' />
               </Button>
             </DropdownMenuTrigger>
-            <DropdownMenuContent>
+            <DropdownMenuContent className=' backdrop-blur-md'>
               <DropdownMenuItem
                 onSelect={() => setScale(1)}>
                 100%
@@ -174,7 +174,8 @@ const PdfRenderer = ({ url }: PdfRendererProps) => {
 
           <Button
             onClick={() => setRotation((prev) => prev + 90)}
-            variant='ghost'
+            variant='default'
+            className=' text-accent'
             aria-label='rotate 90 degrees'>
             <RotateCw className='h-4 w-4' />
           </Button>

@@ -8,6 +8,7 @@ import {
 } from "@kinde-oss/kinde-auth-nextjs/server";
 import { ArrowRight } from "lucide-react";
 import Logo from "./Logo";
+import UserAccountNav from "./UserAccountNav";
 
 const Navbar = () => {
   const { getUser } = getKindeServerSession();
@@ -27,15 +28,6 @@ const Navbar = () => {
           <div className="hidden items-center space-x-4 sm:flex">
             {!user ? (
               <>
-                <Link
-                  href="/pricing"
-                  className={buttonVariants({
-                    variant: "ghost",
-                    size: "sm",
-                  })}
-                >
-                  Pricing
-                </Link>
                 <LoginLink
                   className={buttonVariants({
                     variant: "ghost",
@@ -54,15 +46,15 @@ const Navbar = () => {
               </>
             ) : (
               <>
-                <Link
-                  href="/dashboard"
-                  className={buttonVariants({
-                    variant: "ghost",
-                    size: "sm",
-                  })}
-                >
-                  Dashboard
-                </Link>
+                <UserAccountNav
+                  name={
+                    !user.given_name || !user.family_name
+                      ? 'Your Account'
+                      : `${user.given_name} ${user.family_name}`
+                  }
+                  email={user.email ?? ''}
+                  imageUrl={"/user.jpeg" ?? ''}
+                />
               </>
             )}
           </div>
