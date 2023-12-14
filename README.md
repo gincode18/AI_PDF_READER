@@ -1,6 +1,3 @@
-Certainly! Below is a sample README file for your project, "PaperProphet". This README is designed to be engaging and informative, showcasing the features and technologies used in your project:
-
----
 
 # 🚀 PaperProphet: Unleash the Power of Conversation within Documents! ⚡
 
@@ -30,8 +27,8 @@ https://github.com/gincode18/AI_PDF_READER/assets/91776192/9fd3bd3d-39f0-4b8d-b2
 
 
 ## Getting Started
-
-[Provide instructions on how to install, configure, and use your application. Include any prerequisites, environment setup, and how to run the application.]
+npm i
+npm run dev
 
 ## Contributing
 
