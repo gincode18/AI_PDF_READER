@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Certainly! Below is a sample README file for your project, "PaperProphet". This README is designed to be engaging and informative, showcasing the features and technologies used in your project:
+
+---
+
+# 🚀 PaperProphet: Unleash the Power of Conversation within Documents! ⚡
+
+Welcome to **PaperProphet**, an innovative platform that revolutionizes the way you communicate and collaborate within documents. Built with the power of Next.js, PaperProphet is not just about document sharing; it's about enabling seamless, interactive conversations within those documents. 
+
+## Key Features
+
+- 📄 **Beautiful and Highly Functional PDF Viewer**: Experience a state-of-the-art PDF viewing that integrates chat functionalities seamlessly.
+- 🔄 **Real-Time Streaming API Responses**: Stay updated in real time, ensuring everyone in your team is always on the same page.
+- 🎨 **Sleek UI with 'shadcn-ui'**: Our clean and modern user interface enhances your chat experience, making it intuitive and engaging.
+- 🚀 **Optimistic UI Updates**: Enjoy smooth and responsive updates for an unparalleled user experience.
+- 📤 **Intuitive Drag n’ Drop Uploads**: Sharing documents is a breeze with our user-friendly drag-and-drop feature.
+- ✨ **Instant Loading States**: Eliminate waiting times with instant access to documents and messages.
+- 🔧 **Efficient Data Fetching with tRPC & Zod**: Leverage the latest in technology for fast and reliable data fetching.
+- 🧠 **LangChain for Infinite AI Memory**: Our AI-driven chat feature offers an intelligent document interaction experience.
+- 🌲 **Pinecone Vector Storage**: Utilize scalable vector storage for optimized document search and retrieval.
+- 📊 **Prisma ORM**: Manage your data smoothly and reliably with Prisma.
+- 🔤 **100% TypeScript**: Benefit from the stability and security of a TypeScript-based codebase.
+
+## Live Demo
+
+Check out PaperProphet in action: [Live Demo](https://paperprophet.vercel.app/)
+
+# Video Demo
+
+https://github.com/gincode18/AI_PDF_READER/assets/91776192/9fd3bd3d-39f0-4b8d-b2a3-dc407102a4ed
+
 
 ## Getting Started
 
-First, run the development server:
+[Provide instructions on how to install, configure, and use your application. Include any prerequisites, environment setup, and how to run the application.]
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Contributing
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+We welcome contributions! Please read our contributing guidelines to get started.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Support
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+If you encounter any issues or have questions, please file an issue on our GitHub repository.
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
+[Specify the license under which your project is released.]
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Transform the way you collaborate with PaperProphet - where documents meet seamless communication. 💬✨
 
-## Deploy on Vercel
+#PaperProphet #NextJS #DocumentChat #Collaboration #Innovation #TechRevolution
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to modify this template to better suit your project's specifics, such as adding installation instructions, contribution guidelines, and license details.
