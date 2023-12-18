@@ -35,6 +35,10 @@ const Dashboard = () => {
       <div className="mt-8 flex flex-col items-start justify-between gap-4 border-b border-primary pb-5 sm:flex-row sm:items-center sm:gap-0">
         <h1 className="mb-3 font-bold text-5x text-secondary">My Files</h1>
         <UploadButton />
+        <Link href="/modal">
+          {" "}
+          <Button>Model</Button>
+        </Link>
       </div>
 
       {/* display all user files */}
